@@ -68,5 +68,7 @@ extension MainViewController: UICollectionViewDelegate {
         didSelectItemAt indexPath: IndexPath
     ) {
         collectionView.deselectItem(at: indexPath, animated: true)
+        let viewController = ListAppearanceViewController.instantiate()
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
