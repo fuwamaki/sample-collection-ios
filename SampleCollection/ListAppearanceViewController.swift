@@ -10,8 +10,14 @@ import UIKit
 final class ListAppearanceViewController: UIViewController {
 
     private struct Item: Hashable {
-        let title: String?
         private let identifier = UUID()
+        let text: String
+    }
+
+    private struct Section: Hashable {
+        private let identifier = UUID()
+        let title: String
+        let items: [Item]
     }
 
     @IBOutlet private weak var collectionView: UICollectionView! {
@@ -20,13 +26,23 @@ final class ListAppearanceViewController: UIViewController {
         }
     }
 
+    private var sections: [Section] {
+        [
+            Section(title: "Title1", items: [Item(text: "Item0"), Item(text: "Item1")]),
+            Section(title: "Title2", items: [Item(text: "Item0"), Item(text: "Item1")]),
+            Section(title: "Title3", items: [Item(text: "Item0"), Item(text: "Item1"), Item(text: "Item2")]),
+            Section(title: "Title4", items: [Item(text: "Item0"), Item(text: "Item1"), Item(text: "Item2")]),
+            Section(title: "Title5", items: [Item(text: "Item0"), Item(text: "Item1"), Item(text: "Item2")])
+        ]
+    }
+
     static func instantiate() -> ListAppearanceViewController {
         let storyboard = UIStoryboard(name: String(describing: self), bundle: Bundle(for: self))
         let viewController = storyboard.instantiateInitialViewController() as! ListAppearanceViewController
         return viewController
     }
 
-    private var dataSource: UICollectionViewDiffableDataSource<Int, Item>!
+    private var dataSource: UICollectionViewDiffableDataSource<Section, Item>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,18 +64,18 @@ final class ListAppearanceViewController: UIViewController {
         let headerRegistration = UICollectionView
             .CellRegistration<UICollectionViewListCell, Item> { cell, indexPath, item in
                 var content = cell.defaultContentConfiguration()
-                content.text = item.title
+                content.text = item.text
                 cell.contentConfiguration = content
                 cell.accessories = [.outlineDisclosure()]
             }
         let cellRegistration = UICollectionView
             .CellRegistration<UICollectionViewListCell, Item> { cell, indexPath, item in
                 var content = cell.defaultContentConfiguration()
-                content.text = item.title
+                content.text = item.text
                 cell.contentConfiguration = content
                 cell.accessories = [.disclosureIndicator()]
             }
-        dataSource = UICollectionViewDiffableDataSource<Int, Item>(
+        dataSource = UICollectionViewDiffableDataSource<Section, Item>(
             collectionView: collectionView
         ) { collectionView, indexPath, item in
             return collectionView.dequeueConfiguredReusableCell(
@@ -71,18 +87,15 @@ final class ListAppearanceViewController: UIViewController {
     }
 
     private func setupInitialData() {
-        var snapshot = NSDiffableDataSourceSnapshot<Int, Item>()
-        let sections = Array(0..<5)
-        snapshot.appendSections(sections)
+        let snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
         dataSource.apply(snapshot, animatingDifferences: false)
-        for section in sections {
+        sections.forEach {
             var sectionSnapshot = NSDiffableDataSourceSectionSnapshot<Item>()
-            let headerItem = Item(title: "Section \(section)")
+            let headerItem = Item(text: $0.title)
             sectionSnapshot.append([headerItem])
-            let items = Array(0..<3).map { Item(title: "Item \($0)") }
-            sectionSnapshot.append(items, to: headerItem)
+            sectionSnapshot.append($0.items, to: headerItem)
             sectionSnapshot.expand([headerItem])
-            dataSource.apply(sectionSnapshot, to: section)
+            dataSource.apply(sectionSnapshot, to: $0)
         }
     }
 }
