@@ -9,11 +9,14 @@ import UIKit
 
 enum ListType: Int, CaseIterable {
     case listAppearance
+    case grid
 
     var text: String {
         switch self {
         case .listAppearance:
             return "List Appearance"
+        case .grid:
+            return "Grid"
         }
     }
 
@@ -21,6 +24,9 @@ enum ListType: Int, CaseIterable {
         switch self {
         case .listAppearance:
             let viewController = ListAppearanceViewController.instantiate()
+            navigationController?.pushViewController(viewController, animated: true)
+        case .grid:
+            let viewController = GridViewController.instantiate()
             navigationController?.pushViewController(viewController, animated: true)
         }
     }
