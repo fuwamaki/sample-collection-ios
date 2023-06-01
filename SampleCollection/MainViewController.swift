@@ -19,7 +19,7 @@ class MainViewController: UIViewController {
         }
     }
 
-    private var dataSource: UICollectionViewDiffableDataSource<Section, Int>!
+    private var dataSource: UICollectionViewDiffableDataSource<Section, ListType>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,12 +37,12 @@ class MainViewController: UIViewController {
 
     private func setupDataSource() {
         let cellRegistration = UICollectionView
-            .CellRegistration<UICollectionViewListCell, Int> { cell, indexPath, item in
+            .CellRegistration<UICollectionViewListCell, ListType> { cell, indexPath, item in
                 var content = cell.defaultContentConfiguration()
-                content.text = "\(item)"
+                content.text = item.text
                 cell.contentConfiguration = content
             }
-        dataSource = UICollectionViewDiffableDataSource<Section, Int>(
+        dataSource = UICollectionViewDiffableDataSource<Section, ListType>(
             collectionView: collectionView
         ) { collectionView, indexPath, identifier in
             return collectionView.dequeueConfiguredReusableCell(
@@ -54,9 +54,9 @@ class MainViewController: UIViewController {
     }
 
     private func setupInitialData() {
-        var snapshot = NSDiffableDataSourceSnapshot<Section, Int>()
+        var snapshot = NSDiffableDataSourceSnapshot<Section, ListType>()
         snapshot.appendSections([.main])
-        snapshot.appendItems(Array(0..<94))
+        snapshot.appendItems(ListType.allCases)
         dataSource.apply(snapshot, animatingDifferences: false)
     }
 }
@@ -68,7 +68,6 @@ extension MainViewController: UICollectionViewDelegate {
         didSelectItemAt indexPath: IndexPath
     ) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        let viewController = ListAppearanceViewController.instantiate()
-        navigationController?.pushViewController(viewController, animated: true)
+        ListType(rawValue: indexPath.row)?.pushViewController(navigationController)
     }
 }
