@@ -18,6 +18,7 @@ class MainViewController: UIViewController {
         case grid
         case insetItemsGrid
         case twoColumnGrid
+        case sectionHeaderFooter
 
         var text: String {
             switch self {
@@ -29,6 +30,8 @@ class MainViewController: UIViewController {
                 return "Inset Items Grid"
             case .twoColumnGrid:
                 return "Two Column Grid"
+            case .sectionHeaderFooter:
+                return "Section Header Footer"
             }
         }
 
@@ -45,6 +48,9 @@ class MainViewController: UIViewController {
                 navigationController?.pushViewController(viewController, animated: true)
             case .twoColumnGrid:
                 let viewController = TwoColumnGridViewController.instantiate()
+                navigationController?.pushViewController(viewController, animated: true)
+            case .sectionHeaderFooter:
+                let viewController = SectionHeaderFooterViewController.instantiate()
                 navigationController?.pushViewController(viewController, animated: true)
             }
         }
