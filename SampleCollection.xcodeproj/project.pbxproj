@@ -15,11 +15,12 @@
 		208466D12A16C8F2005B82A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 208466CF2A16C8F2005B82A9 /* LaunchScreen.storyboard */; };
 		208466D92A16E505005B82A9 /* ListAppearanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208466D82A16E505005B82A9 /* ListAppearanceViewController.swift */; };
 		208466DB2A16E526005B82A9 /* ListAppearanceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 208466DA2A16E526005B82A9 /* ListAppearanceViewController.storyboard */; };
-		2085D81C2A28DC0E00978ED7 /* ListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D81B2A28DC0E00978ED7 /* ListType.swift */; };
 		2085D81E2A28DF2500978ED7 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D81D2A28DF2500978ED7 /* GridViewController.swift */; };
 		2085D8202A28E05700978ED7 /* GridViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2085D81F2A28E05700978ED7 /* GridViewController.storyboard */; };
 		2085D8222A2D671100978ED7 /* InsetItemsGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D8212A2D671000978ED7 /* InsetItemsGridViewController.swift */; };
 		2085D8242A2D671C00978ED7 /* InsetItemsGridViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2085D8232A2D671C00978ED7 /* InsetItemsGridViewController.storyboard */; };
+		2085D8262A2D704400978ED7 /* TwoColumnGridViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2085D8252A2D704400978ED7 /* TwoColumnGridViewController.storyboard */; };
+		2085D8282A2D705700978ED7 /* TwoColumnGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D8272A2D705700978ED7 /* TwoColumnGridViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,11 +34,12 @@
 		208466D22A16C8F2005B82A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		208466D82A16E505005B82A9 /* ListAppearanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAppearanceViewController.swift; sourceTree = "<group>"; };
 		208466DA2A16E526005B82A9 /* ListAppearanceViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListAppearanceViewController.storyboard; sourceTree = "<group>"; };
-		2085D81B2A28DC0E00978ED7 /* ListType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListType.swift; sourceTree = "<group>"; };
 		2085D81D2A28DF2500978ED7 /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
 		2085D81F2A28E05700978ED7 /* GridViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GridViewController.storyboard; sourceTree = "<group>"; };
 		2085D8212A2D671000978ED7 /* InsetItemsGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetItemsGridViewController.swift; sourceTree = "<group>"; };
 		2085D8232A2D671C00978ED7 /* InsetItemsGridViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InsetItemsGridViewController.storyboard; sourceTree = "<group>"; };
+		2085D8252A2D704400978ED7 /* TwoColumnGridViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TwoColumnGridViewController.storyboard; sourceTree = "<group>"; };
+		2085D8272A2D705700978ED7 /* TwoColumnGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnGridViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +76,6 @@
 				208466CD2A16C8F2005B82A9 /* Assets.xcassets */,
 				208466C42A16C8F1005B82A9 /* AppDelegate.swift */,
 				208466C62A16C8F1005B82A9 /* SceneDelegate.swift */,
-				2085D81B2A28DC0E00978ED7 /* ListType.swift */,
 				208466CF2A16C8F2005B82A9 /* LaunchScreen.storyboard */,
 				208466C82A16C8F1005B82A9 /* MainViewController.swift */,
 				208466CA2A16C8F1005B82A9 /* MainViewController.storyboard */,
@@ -84,6 +85,8 @@
 				2085D81F2A28E05700978ED7 /* GridViewController.storyboard */,
 				2085D8212A2D671000978ED7 /* InsetItemsGridViewController.swift */,
 				2085D8232A2D671C00978ED7 /* InsetItemsGridViewController.storyboard */,
+				2085D8272A2D705700978ED7 /* TwoColumnGridViewController.swift */,
+				2085D8252A2D704400978ED7 /* TwoColumnGridViewController.storyboard */,
 			);
 			path = SampleCollection;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				208466DB2A16E526005B82A9 /* ListAppearanceViewController.storyboard in Resources */,
 				208466CE2A16C8F2005B82A9 /* Assets.xcassets in Resources */,
 				208466CC2A16C8F1005B82A9 /* MainViewController.storyboard in Resources */,
+				2085D8262A2D704400978ED7 /* TwoColumnGridViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,8 +167,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				208466D92A16E505005B82A9 /* ListAppearanceViewController.swift in Sources */,
-				2085D81C2A28DC0E00978ED7 /* ListType.swift in Sources */,
 				2085D81E2A28DF2500978ED7 /* GridViewController.swift in Sources */,
+				2085D8282A2D705700978ED7 /* TwoColumnGridViewController.swift in Sources */,
 				208466C92A16C8F1005B82A9 /* MainViewController.swift in Sources */,
 				208466C52A16C8F1005B82A9 /* AppDelegate.swift in Sources */,
 				208466C72A16C8F1005B82A9 /* SceneDelegate.swift in Sources */,

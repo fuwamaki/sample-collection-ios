@@ -17,6 +17,7 @@ class MainViewController: UIViewController {
         case listAppearance
         case grid
         case insetItemsGrid
+        case twoColumnGrid
 
         var text: String {
             switch self {
@@ -26,6 +27,8 @@ class MainViewController: UIViewController {
                 return "Grid"
             case .insetItemsGrid:
                 return "Inset Items Grid"
+            case .twoColumnGrid:
+                return "Two Column Grid"
             }
         }
 
@@ -39,6 +42,9 @@ class MainViewController: UIViewController {
                 navigationController?.pushViewController(viewController, animated: true)
             case .insetItemsGrid:
                 let viewController = InsetItemsGridViewController.instantiate()
+                navigationController?.pushViewController(viewController, animated: true)
+            case .twoColumnGrid:
+                let viewController = TwoColumnGridViewController.instantiate()
                 navigationController?.pushViewController(viewController, animated: true)
             }
         }
