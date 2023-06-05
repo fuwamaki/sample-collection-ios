@@ -13,6 +13,37 @@ class MainViewController: UIViewController {
         case main
     }
 
+    private enum ListType: Int, CaseIterable {
+        case listAppearance
+        case grid
+        case insetItemsGrid
+
+        var text: String {
+            switch self {
+            case .listAppearance:
+                return "List Appearance"
+            case .grid:
+                return "Grid"
+            case .insetItemsGrid:
+                return "Inset Items Grid"
+            }
+        }
+
+        func pushViewController(_ navigationController: UINavigationController?) {
+            switch self {
+            case .listAppearance:
+                let viewController = ListAppearanceViewController.instantiate()
+                navigationController?.pushViewController(viewController, animated: true)
+            case .grid:
+                let viewController = GridViewController.instantiate()
+                navigationController?.pushViewController(viewController, animated: true)
+            case .insetItemsGrid:
+                let viewController = InsetItemsGridViewController.instantiate()
+                navigationController?.pushViewController(viewController, animated: true)
+            }
+        }
+    }
+
     @IBOutlet private weak var collectionView: UICollectionView! {
         didSet {
             collectionView.delegate = self

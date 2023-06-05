@@ -1,13 +1,13 @@
 //
-//  GridViewController.swift
+//  InsetItemsGridViewController.swift
 //  SampleCollection
 //
-//  Created by fuwamaki on 2023/06/01.
+//  Created by fuwamaki on 2023/06/05.
 //
 
 import UIKit
 
-class GridViewController: UIViewController {
+final class InsetItemsGridViewController: UIViewController {
 
     enum Section {
         case main
@@ -15,9 +15,9 @@ class GridViewController: UIViewController {
 
     @IBOutlet private weak var collectionView: UICollectionView!
 
-    static func instantiate() -> GridViewController {
+    static func instantiate() -> InsetItemsGridViewController {
         let storyboard = UIStoryboard(name: String(describing: self), bundle: Bundle(for: self))
-        let viewController = storyboard.instantiateInitialViewController() as! GridViewController
+        let viewController = storyboard.instantiateInitialViewController() as! InsetItemsGridViewController
         return viewController
     }
 
@@ -36,6 +36,7 @@ class GridViewController: UIViewController {
             heightDimension: .fractionalHeight(1.0)
         )
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5) // difference from Grid
         let groupSize = NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(1.0),
             heightDimension: .fractionalWidth(0.2)
