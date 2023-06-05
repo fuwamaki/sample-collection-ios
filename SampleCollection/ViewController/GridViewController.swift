@@ -9,7 +9,7 @@ import UIKit
 
 class GridViewController: UIViewController {
 
-    enum Section {
+    private enum Section {
         case main
     }
 

@@ -9,7 +9,7 @@ import UIKit
 
 final class InsetItemsGridViewController: UIViewController {
 
-    enum Section {
+    private enum Section {
         case main
     }
 

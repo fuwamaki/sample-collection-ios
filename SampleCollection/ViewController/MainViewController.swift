@@ -20,6 +20,7 @@ class MainViewController: UIViewController {
         case twoColumnGrid
         case sectionHeaderFooter
         case pinnedSectionHeaderFooter
+        case listCollection
 
         var text: String {
             switch self {
@@ -35,6 +36,8 @@ class MainViewController: UIViewController {
                 return "Section Header Footer"
             case .pinnedSectionHeaderFooter:
                 return "Pinned Section Header Footer"
+            case .listCollection:
+                return "List Collection"
             }
         }
 
@@ -57,6 +60,9 @@ class MainViewController: UIViewController {
                 navigationController?.pushViewController(viewController, animated: true)
             case .pinnedSectionHeaderFooter:
                 let viewController = PinnedSectionHeaderFooterViewController.instantiate()
+                navigationController?.pushViewController(viewController, animated: true)
+            case .listCollection:
+                let viewController = ListCollectionViewController.instantiate()
                 navigationController?.pushViewController(viewController, animated: true)
             }
         }

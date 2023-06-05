@@ -9,7 +9,7 @@ import UIKit
 
 final class TwoColumnGridViewController: UIViewController {
 
-    enum Section {
+    private enum Section {
         case main
     }
 
