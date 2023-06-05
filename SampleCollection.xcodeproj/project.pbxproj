@@ -23,6 +23,9 @@
 		2085D8282A2D705700978ED7 /* TwoColumnGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D8272A2D705700978ED7 /* TwoColumnGridViewController.swift */; };
 		2085D82A2A2D730900978ED7 /* SectionHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D8292A2D730900978ED7 /* SectionHeaderFooterViewController.swift */; };
 		2085D82C2A2D732200978ED7 /* SectionHeaderFooterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2085D82B2A2D732200978ED7 /* SectionHeaderFooterViewController.storyboard */; };
+		2085D82E2A2D78D800978ED7 /* PinnedSectionHeaderFooterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2085D82D2A2D78D800978ED7 /* PinnedSectionHeaderFooterViewController.storyboard */; };
+		2085D8302A2D78E100978ED7 /* PinnedSectionHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D82F2A2D78E100978ED7 /* PinnedSectionHeaderFooterViewController.swift */; };
+		2085D8322A2D796F00978ED7 /* TitleSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D8312A2D796F00978ED7 /* TitleSupplementaryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		2085D8272A2D705700978ED7 /* TwoColumnGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnGridViewController.swift; sourceTree = "<group>"; };
 		2085D8292A2D730900978ED7 /* SectionHeaderFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderFooterViewController.swift; sourceTree = "<group>"; };
 		2085D82B2A2D732200978ED7 /* SectionHeaderFooterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SectionHeaderFooterViewController.storyboard; sourceTree = "<group>"; };
+		2085D82D2A2D78D800978ED7 /* PinnedSectionHeaderFooterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PinnedSectionHeaderFooterViewController.storyboard; sourceTree = "<group>"; };
+		2085D82F2A2D78E100978ED7 /* PinnedSectionHeaderFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedSectionHeaderFooterViewController.swift; sourceTree = "<group>"; };
+		2085D8312A2D796F00978ED7 /* TitleSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSupplementaryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 				208466C42A16C8F1005B82A9 /* AppDelegate.swift */,
 				208466C62A16C8F1005B82A9 /* SceneDelegate.swift */,
 				208466CF2A16C8F2005B82A9 /* LaunchScreen.storyboard */,
+				2085D8312A2D796F00978ED7 /* TitleSupplementaryView.swift */,
 				208466C82A16C8F1005B82A9 /* MainViewController.swift */,
 				208466CA2A16C8F1005B82A9 /* MainViewController.storyboard */,
 				208466D82A16E505005B82A9 /* ListAppearanceViewController.swift */,
@@ -93,6 +100,8 @@
 				2085D8252A2D704400978ED7 /* TwoColumnGridViewController.storyboard */,
 				2085D8292A2D730900978ED7 /* SectionHeaderFooterViewController.swift */,
 				2085D82B2A2D732200978ED7 /* SectionHeaderFooterViewController.storyboard */,
+				2085D82F2A2D78E100978ED7 /* PinnedSectionHeaderFooterViewController.swift */,
+				2085D82D2A2D78D800978ED7 /* PinnedSectionHeaderFooterViewController.storyboard */,
 			);
 			path = SampleCollection;
 			sourceTree = "<group>";
@@ -159,6 +168,7 @@
 				208466D12A16C8F2005B82A9 /* LaunchScreen.storyboard in Resources */,
 				2085D8202A28E05700978ED7 /* GridViewController.storyboard in Resources */,
 				208466DB2A16E526005B82A9 /* ListAppearanceViewController.storyboard in Resources */,
+				2085D82E2A2D78D800978ED7 /* PinnedSectionHeaderFooterViewController.storyboard in Resources */,
 				208466CE2A16C8F2005B82A9 /* Assets.xcassets in Resources */,
 				208466CC2A16C8F1005B82A9 /* MainViewController.storyboard in Resources */,
 				2085D8262A2D704400978ED7 /* TwoColumnGridViewController.storyboard in Resources */,
@@ -178,9 +188,11 @@
 				2085D8282A2D705700978ED7 /* TwoColumnGridViewController.swift in Sources */,
 				208466C92A16C8F1005B82A9 /* MainViewController.swift in Sources */,
 				208466C52A16C8F1005B82A9 /* AppDelegate.swift in Sources */,
+				2085D8302A2D78E100978ED7 /* PinnedSectionHeaderFooterViewController.swift in Sources */,
 				208466C72A16C8F1005B82A9 /* SceneDelegate.swift in Sources */,
 				2085D82A2A2D730900978ED7 /* SectionHeaderFooterViewController.swift in Sources */,
 				2085D8222A2D671100978ED7 /* InsetItemsGridViewController.swift in Sources */,
+				2085D8322A2D796F00978ED7 /* TitleSupplementaryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

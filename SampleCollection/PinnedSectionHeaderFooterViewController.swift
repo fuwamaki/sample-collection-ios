@@ -1,5 +1,5 @@
 //
-//  SectionHeaderFooterViewController.swift
+//  PinnedSectionHeaderFooterViewController.swift
 //  SampleCollection
 //
 //  Created by fuwamaki on 2023/06/05.
@@ -7,13 +7,13 @@
 
 import UIKit
 
-final class SectionHeaderFooterViewController: UIViewController {
+final class PinnedSectionHeaderFooterViewController: UIViewController {
 
     @IBOutlet private weak var collectionView: UICollectionView!
 
-    static func instantiate() -> SectionHeaderFooterViewController {
+    static func instantiate() -> PinnedSectionHeaderFooterViewController {
         let storyboard = UIStoryboard(name: String(describing: self), bundle: Bundle(for: self))
-        let viewController = storyboard.instantiateInitialViewController() as! SectionHeaderFooterViewController
+        let viewController = storyboard.instantiateInitialViewController() as! PinnedSectionHeaderFooterViewController
         return viewController
     }
 
@@ -52,6 +52,7 @@ final class SectionHeaderFooterViewController: UIViewController {
             elementKind: "Header",
             alignment: .top
         )
+        sectionHeader.pinToVisibleBounds = true // difference from Normal
         let sectionFooter = NSCollectionLayoutBoundarySupplementaryItem(
             layoutSize: NSCollectionLayoutSize(
                 widthDimension: .fractionalWidth(1.0),
