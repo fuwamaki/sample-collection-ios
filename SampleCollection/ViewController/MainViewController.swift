@@ -24,6 +24,7 @@ class MainViewController: UIViewController {
         case distinctSection
         case adaptiveSection
         case orthogonalSectionBehavior
+        case reorderList
 
         var text: String {
             switch self {
@@ -47,6 +48,8 @@ class MainViewController: UIViewController {
                 return "Adaptive Section"
             case .orthogonalSectionBehavior:
                 return "Orthogonal Section Behavior"
+            case .reorderList:
+                return "Reorder List"
             }
         }
 
@@ -81,6 +84,9 @@ class MainViewController: UIViewController {
                 navigationController?.pushViewController(viewController, animated: true)
             case .orthogonalSectionBehavior:
                 let viewController = OrthogonalSectionBehaviorViewController.instantiate()
+                navigationController?.pushViewController(viewController, animated: true)
+            case .reorderList:
+                let viewController = ReorderListViewController.instantiate()
                 navigationController?.pushViewController(viewController, animated: true)
             }
         }

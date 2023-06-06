@@ -37,6 +37,9 @@
 		2085D84D2A2EC35400978ED7 /* AdaptiveSectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2085D84C2A2EC35400978ED7 /* AdaptiveSectionViewController.storyboard */; };
 		2085D84F2A2ECC5100978ED7 /* OrthogonalSectionBehaviorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2085D84E2A2ECC5100978ED7 /* OrthogonalSectionBehaviorViewController.storyboard */; };
 		2085D8512A2ECC5B00978ED7 /* OrthogonalSectionBehaviorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D8502A2ECC5B00978ED7 /* OrthogonalSectionBehaviorViewController.swift */; };
+		2085D8532A2ECFB200978ED7 /* ReorderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D8522A2ECFB200978ED7 /* ReorderListViewController.swift */; };
+		2085D8552A2ECFC000978ED7 /* ReorderListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2085D8542A2ECFC000978ED7 /* ReorderListViewController.storyboard */; };
+		2085D8582A2ED05E00978ED7 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D8572A2ED05E00978ED7 /* Emoji.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +75,9 @@
 		2085D84C2A2EC35400978ED7 /* AdaptiveSectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdaptiveSectionViewController.storyboard; sourceTree = "<group>"; };
 		2085D84E2A2ECC5100978ED7 /* OrthogonalSectionBehaviorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrthogonalSectionBehaviorViewController.storyboard; sourceTree = "<group>"; };
 		2085D8502A2ECC5B00978ED7 /* OrthogonalSectionBehaviorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrthogonalSectionBehaviorViewController.swift; sourceTree = "<group>"; };
+		2085D8522A2ECFB200978ED7 /* ReorderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderListViewController.swift; sourceTree = "<group>"; };
+		2085D8542A2ECFC000978ED7 /* ReorderListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReorderListViewController.storyboard; sourceTree = "<group>"; };
+		2085D8572A2ED05E00978ED7 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 				208466D22A16C8F2005B82A9 /* Info.plist */,
 				208466C42A16C8F1005B82A9 /* AppDelegate.swift */,
 				208466C62A16C8F1005B82A9 /* SceneDelegate.swift */,
+				2085D8562A2ED05400978ED7 /* Entity */,
 				2085D8332A2DABD000978ED7 /* ViewComponent */,
 				2085D8352A2DABDF00978ED7 /* ViewController */,
 				2085D8342A2DABD800978ED7 /* Resource */,
@@ -141,6 +148,7 @@
 				2085D8422A2EBE5700978ED7 /* DistinctSectionViewController.storyboard */,
 				2085D84C2A2EC35400978ED7 /* AdaptiveSectionViewController.storyboard */,
 				2085D84E2A2ECC5100978ED7 /* OrthogonalSectionBehaviorViewController.storyboard */,
+				2085D8542A2ECFC000978ED7 /* ReorderListViewController.storyboard */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -159,8 +167,17 @@
 				2085D8402A2EBE4C00978ED7 /* DistinctSectionViewController.swift */,
 				2085D8482A2EC34400978ED7 /* AdaptiveSectionViewController.swift */,
 				2085D8502A2ECC5B00978ED7 /* OrthogonalSectionBehaviorViewController.swift */,
+				2085D8522A2ECFB200978ED7 /* ReorderListViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2085D8562A2ED05400978ED7 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2085D8572A2ED05E00978ED7 /* Emoji.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +247,7 @@
 				208466CE2A16C8F2005B82A9 /* Assets.xcassets in Resources */,
 				208466CC2A16C8F1005B82A9 /* MainViewController.storyboard in Resources */,
 				2085D8432A2EBE5700978ED7 /* DistinctSectionViewController.storyboard in Resources */,
+				2085D8552A2ECFC000978ED7 /* ReorderListViewController.storyboard in Resources */,
 				2085D8392A2DACDC00978ED7 /* ListCollectionViewController.storyboard in Resources */,
 				2085D84D2A2EC35400978ED7 /* AdaptiveSectionViewController.storyboard in Resources */,
 				2085D8262A2D704400978ED7 /* TwoColumnGridViewController.storyboard in Resources */,
@@ -244,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2085D8532A2ECFB200978ED7 /* ReorderListViewController.swift in Sources */,
 				2085D8492A2EC34400978ED7 /* AdaptiveSectionViewController.swift in Sources */,
 				208466D92A16E505005B82A9 /* ListAppearanceViewController.swift in Sources */,
 				2085D81E2A28DF2500978ED7 /* GridViewController.swift in Sources */,
@@ -257,6 +276,7 @@
 				2085D8302A2D78E100978ED7 /* PinnedSectionHeaderFooterViewController.swift in Sources */,
 				2085D83F2A2EB34500978ED7 /* SampleCollectionCell.swift in Sources */,
 				2085D8472A2EBF6000978ED7 /* TextCell.swift in Sources */,
+				2085D8582A2ED05E00978ED7 /* Emoji.swift in Sources */,
 				208466C72A16C8F1005B82A9 /* SceneDelegate.swift in Sources */,
 				2085D82A2A2D730900978ED7 /* SectionHeaderFooterViewController.swift in Sources */,
 				2085D8222A2D671100978ED7 /* InsetItemsGridViewController.swift in Sources */,
