@@ -9,10 +9,6 @@ import UIKit
 
 final class DistinctSectionViewController: UIViewController {
 
-    private enum Section {
-        case main
-    }
-
     enum SectionLayoutKind: Int, CaseIterable {
         case list
         case grid5

@@ -23,6 +23,7 @@ class MainViewController: UIViewController {
         case listCollection
         case distinctSection
         case adaptiveSection
+        case orthogonalSectionBehavior
 
         var text: String {
             switch self {
@@ -44,6 +45,8 @@ class MainViewController: UIViewController {
                 return "Distinct Section"
             case .adaptiveSection:
                 return "Adaptive Section"
+            case .orthogonalSectionBehavior:
+                return "Orthogonal Section Behavior"
             }
         }
 
@@ -75,6 +78,9 @@ class MainViewController: UIViewController {
                 navigationController?.pushViewController(viewController, animated: true)
             case .adaptiveSection:
                 let viewController = AdaptiveSectionViewController.instantiate()
+                navigationController?.pushViewController(viewController, animated: true)
+            case .orthogonalSectionBehavior:
+                let viewController = OrthogonalSectionBehaviorViewController.instantiate()
                 navigationController?.pushViewController(viewController, animated: true)
             }
         }

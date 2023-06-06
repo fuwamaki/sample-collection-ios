@@ -35,6 +35,8 @@
 		2085D8472A2EBF6000978ED7 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D8462A2EBF6000978ED7 /* TextCell.swift */; };
 		2085D8492A2EC34400978ED7 /* AdaptiveSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D8482A2EC34400978ED7 /* AdaptiveSectionViewController.swift */; };
 		2085D84D2A2EC35400978ED7 /* AdaptiveSectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2085D84C2A2EC35400978ED7 /* AdaptiveSectionViewController.storyboard */; };
+		2085D84F2A2ECC5100978ED7 /* OrthogonalSectionBehaviorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2085D84E2A2ECC5100978ED7 /* OrthogonalSectionBehaviorViewController.storyboard */; };
+		2085D8512A2ECC5B00978ED7 /* OrthogonalSectionBehaviorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D8502A2ECC5B00978ED7 /* OrthogonalSectionBehaviorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		2085D8462A2EBF6000978ED7 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
 		2085D8482A2EC34400978ED7 /* AdaptiveSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveSectionViewController.swift; sourceTree = "<group>"; };
 		2085D84C2A2EC35400978ED7 /* AdaptiveSectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdaptiveSectionViewController.storyboard; sourceTree = "<group>"; };
+		2085D84E2A2ECC5100978ED7 /* OrthogonalSectionBehaviorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrthogonalSectionBehaviorViewController.storyboard; sourceTree = "<group>"; };
+		2085D8502A2ECC5B00978ED7 /* OrthogonalSectionBehaviorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrthogonalSectionBehaviorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,7 @@
 				2085D8382A2DACDC00978ED7 /* ListCollectionViewController.storyboard */,
 				2085D8422A2EBE5700978ED7 /* DistinctSectionViewController.storyboard */,
 				2085D84C2A2EC35400978ED7 /* AdaptiveSectionViewController.storyboard */,
+				2085D84E2A2ECC5100978ED7 /* OrthogonalSectionBehaviorViewController.storyboard */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 				2085D8362A2DACCF00978ED7 /* ListCollectionViewController.swift */,
 				2085D8402A2EBE4C00978ED7 /* DistinctSectionViewController.swift */,
 				2085D8482A2EC34400978ED7 /* AdaptiveSectionViewController.swift */,
+				2085D8502A2ECC5B00978ED7 /* OrthogonalSectionBehaviorViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -217,6 +223,7 @@
 			files = (
 				2085D8242A2D671C00978ED7 /* InsetItemsGridViewController.storyboard in Resources */,
 				208466D12A16C8F2005B82A9 /* LaunchScreen.storyboard in Resources */,
+				2085D84F2A2ECC5100978ED7 /* OrthogonalSectionBehaviorViewController.storyboard in Resources */,
 				2085D8202A28E05700978ED7 /* GridViewController.storyboard in Resources */,
 				208466DB2A16E526005B82A9 /* ListAppearanceViewController.storyboard in Resources */,
 				2085D82E2A2D78D800978ED7 /* PinnedSectionHeaderFooterViewController.storyboard in Resources */,
@@ -246,6 +253,7 @@
 				2085D8282A2D705700978ED7 /* TwoColumnGridViewController.swift in Sources */,
 				208466C92A16C8F1005B82A9 /* MainViewController.swift in Sources */,
 				208466C52A16C8F1005B82A9 /* AppDelegate.swift in Sources */,
+				2085D8512A2ECC5B00978ED7 /* OrthogonalSectionBehaviorViewController.swift in Sources */,
 				2085D8302A2D78E100978ED7 /* PinnedSectionHeaderFooterViewController.swift in Sources */,
 				2085D83F2A2EB34500978ED7 /* SampleCollectionCell.swift in Sources */,
 				2085D8472A2EBF6000978ED7 /* TextCell.swift in Sources */,
