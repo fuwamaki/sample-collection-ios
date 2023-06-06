@@ -25,6 +25,7 @@ class MainViewController: UIViewController {
         case adaptiveSection
         case orthogonalSectionBehavior
         case reorderList
+        case emojiExplorer
 
         var text: String {
             switch self {
@@ -50,6 +51,8 @@ class MainViewController: UIViewController {
                 return "Orthogonal Section Behavior"
             case .reorderList:
                 return "Reorder List"
+            case .emojiExplorer:
+                return "Emoji Explorer"
             }
         }
 
@@ -87,6 +90,9 @@ class MainViewController: UIViewController {
                 navigationController?.pushViewController(viewController, animated: true)
             case .reorderList:
                 let viewController = ReorderListViewController.instantiate()
+                navigationController?.pushViewController(viewController, animated: true)
+            case .emojiExplorer:
+                let viewController = EmojiExplorerViewController.instantiate()
                 navigationController?.pushViewController(viewController, animated: true)
             }
         }
