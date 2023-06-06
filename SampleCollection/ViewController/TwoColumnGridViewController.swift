@@ -32,7 +32,7 @@ final class TwoColumnGridViewController: UIViewController {
 
     private func setupCollectionViewLayout() {
         let itemSize = NSCollectionLayoutSize(
-            widthDimension: .fractionalWidth(0.5),
+            widthDimension: .fractionalWidth(1.0/2),
             heightDimension: .fractionalHeight(1.0)
         )
         let item = NSCollectionLayoutItem(layoutSize: itemSize)

@@ -29,6 +29,10 @@
 		2085D8372A2DACCF00978ED7 /* ListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D8362A2DACCF00978ED7 /* ListCollectionViewController.swift */; };
 		2085D8392A2DACDC00978ED7 /* ListCollectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2085D8382A2DACDC00978ED7 /* ListCollectionViewController.storyboard */; };
 		2085D83F2A2EB34500978ED7 /* SampleCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D83E2A2EB34500978ED7 /* SampleCollectionCell.swift */; };
+		2085D8412A2EBE4C00978ED7 /* DistinctSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D8402A2EBE4C00978ED7 /* DistinctSectionViewController.swift */; };
+		2085D8432A2EBE5700978ED7 /* DistinctSectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2085D8422A2EBE5700978ED7 /* DistinctSectionViewController.storyboard */; };
+		2085D8452A2EBF4200978ED7 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D8442A2EBF4200978ED7 /* ListCell.swift */; };
+		2085D8472A2EBF6000978ED7 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D8462A2EBF6000978ED7 /* TextCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,10 @@
 		2085D8362A2DACCF00978ED7 /* ListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewController.swift; sourceTree = "<group>"; };
 		2085D8382A2DACDC00978ED7 /* ListCollectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListCollectionViewController.storyboard; sourceTree = "<group>"; };
 		2085D83E2A2EB34500978ED7 /* SampleCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCollectionCell.swift; sourceTree = "<group>"; };
+		2085D8402A2EBE4C00978ED7 /* DistinctSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistinctSectionViewController.swift; sourceTree = "<group>"; };
+		2085D8422A2EBE5700978ED7 /* DistinctSectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DistinctSectionViewController.storyboard; sourceTree = "<group>"; };
+		2085D8442A2EBF4200978ED7 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		2085D8462A2EBF6000978ED7 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,8 @@
 			children = (
 				2085D8312A2D796F00978ED7 /* TitleSupplementaryView.swift */,
 				2085D83E2A2EB34500978ED7 /* SampleCollectionCell.swift */,
+				2085D8442A2EBF4200978ED7 /* ListCell.swift */,
+				2085D8462A2EBF6000978ED7 /* TextCell.swift */,
 			);
 			path = ViewComponent;
 			sourceTree = "<group>";
@@ -120,6 +130,7 @@
 				2085D82B2A2D732200978ED7 /* SectionHeaderFooterViewController.storyboard */,
 				2085D82D2A2D78D800978ED7 /* PinnedSectionHeaderFooterViewController.storyboard */,
 				2085D8382A2DACDC00978ED7 /* ListCollectionViewController.storyboard */,
+				2085D8422A2EBE5700978ED7 /* DistinctSectionViewController.storyboard */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -135,6 +146,7 @@
 				2085D8292A2D730900978ED7 /* SectionHeaderFooterViewController.swift */,
 				2085D82F2A2D78E100978ED7 /* PinnedSectionHeaderFooterViewController.swift */,
 				2085D8362A2DACCF00978ED7 /* ListCollectionViewController.swift */,
+				2085D8402A2EBE4C00978ED7 /* DistinctSectionViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -204,6 +216,7 @@
 				2085D82E2A2D78D800978ED7 /* PinnedSectionHeaderFooterViewController.storyboard in Resources */,
 				208466CE2A16C8F2005B82A9 /* Assets.xcassets in Resources */,
 				208466CC2A16C8F1005B82A9 /* MainViewController.storyboard in Resources */,
+				2085D8432A2EBE5700978ED7 /* DistinctSectionViewController.storyboard in Resources */,
 				2085D8392A2DACDC00978ED7 /* ListCollectionViewController.storyboard in Resources */,
 				2085D8262A2D704400978ED7 /* TwoColumnGridViewController.storyboard in Resources */,
 				2085D82C2A2D732200978ED7 /* SectionHeaderFooterViewController.storyboard in Resources */,
@@ -219,12 +232,15 @@
 			files = (
 				208466D92A16E505005B82A9 /* ListAppearanceViewController.swift in Sources */,
 				2085D81E2A28DF2500978ED7 /* GridViewController.swift in Sources */,
+				2085D8412A2EBE4C00978ED7 /* DistinctSectionViewController.swift in Sources */,
+				2085D8452A2EBF4200978ED7 /* ListCell.swift in Sources */,
 				2085D8372A2DACCF00978ED7 /* ListCollectionViewController.swift in Sources */,
 				2085D8282A2D705700978ED7 /* TwoColumnGridViewController.swift in Sources */,
 				208466C92A16C8F1005B82A9 /* MainViewController.swift in Sources */,
 				208466C52A16C8F1005B82A9 /* AppDelegate.swift in Sources */,
 				2085D8302A2D78E100978ED7 /* PinnedSectionHeaderFooterViewController.swift in Sources */,
 				2085D83F2A2EB34500978ED7 /* SampleCollectionCell.swift in Sources */,
+				2085D8472A2EBF6000978ED7 /* TextCell.swift in Sources */,
 				208466C72A16C8F1005B82A9 /* SceneDelegate.swift in Sources */,
 				2085D82A2A2D730900978ED7 /* SectionHeaderFooterViewController.swift in Sources */,
 				2085D8222A2D671100978ED7 /* InsetItemsGridViewController.swift in Sources */,
