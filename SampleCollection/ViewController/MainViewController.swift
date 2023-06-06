@@ -22,6 +22,7 @@ class MainViewController: UIViewController {
         case pinnedSectionHeaderFooter
         case listCollection
         case distinctSection
+        case adaptiveSection
 
         var text: String {
             switch self {
@@ -41,6 +42,8 @@ class MainViewController: UIViewController {
                 return "List Collection"
             case .distinctSection:
                 return "Distinct Section"
+            case .adaptiveSection:
+                return "Adaptive Section"
             }
         }
 
@@ -69,6 +72,9 @@ class MainViewController: UIViewController {
                 navigationController?.pushViewController(viewController, animated: true)
             case .distinctSection:
                 let viewController = DistinctSectionViewController.instantiate()
+                navigationController?.pushViewController(viewController, animated: true)
+            case .adaptiveSection:
+                let viewController = AdaptiveSectionViewController.instantiate()
                 navigationController?.pushViewController(viewController, animated: true)
             }
         }

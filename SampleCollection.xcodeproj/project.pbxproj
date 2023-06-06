@@ -33,6 +33,8 @@
 		2085D8432A2EBE5700978ED7 /* DistinctSectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2085D8422A2EBE5700978ED7 /* DistinctSectionViewController.storyboard */; };
 		2085D8452A2EBF4200978ED7 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D8442A2EBF4200978ED7 /* ListCell.swift */; };
 		2085D8472A2EBF6000978ED7 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D8462A2EBF6000978ED7 /* TextCell.swift */; };
+		2085D8492A2EC34400978ED7 /* AdaptiveSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D8482A2EC34400978ED7 /* AdaptiveSectionViewController.swift */; };
+		2085D84D2A2EC35400978ED7 /* AdaptiveSectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2085D84C2A2EC35400978ED7 /* AdaptiveSectionViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		2085D8422A2EBE5700978ED7 /* DistinctSectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DistinctSectionViewController.storyboard; sourceTree = "<group>"; };
 		2085D8442A2EBF4200978ED7 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		2085D8462A2EBF6000978ED7 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		2085D8482A2EC34400978ED7 /* AdaptiveSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveSectionViewController.swift; sourceTree = "<group>"; };
+		2085D84C2A2EC35400978ED7 /* AdaptiveSectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdaptiveSectionViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,7 @@
 				2085D82D2A2D78D800978ED7 /* PinnedSectionHeaderFooterViewController.storyboard */,
 				2085D8382A2DACDC00978ED7 /* ListCollectionViewController.storyboard */,
 				2085D8422A2EBE5700978ED7 /* DistinctSectionViewController.storyboard */,
+				2085D84C2A2EC35400978ED7 /* AdaptiveSectionViewController.storyboard */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 				2085D82F2A2D78E100978ED7 /* PinnedSectionHeaderFooterViewController.swift */,
 				2085D8362A2DACCF00978ED7 /* ListCollectionViewController.swift */,
 				2085D8402A2EBE4C00978ED7 /* DistinctSectionViewController.swift */,
+				2085D8482A2EC34400978ED7 /* AdaptiveSectionViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -218,6 +224,7 @@
 				208466CC2A16C8F1005B82A9 /* MainViewController.storyboard in Resources */,
 				2085D8432A2EBE5700978ED7 /* DistinctSectionViewController.storyboard in Resources */,
 				2085D8392A2DACDC00978ED7 /* ListCollectionViewController.storyboard in Resources */,
+				2085D84D2A2EC35400978ED7 /* AdaptiveSectionViewController.storyboard in Resources */,
 				2085D8262A2D704400978ED7 /* TwoColumnGridViewController.storyboard in Resources */,
 				2085D82C2A2D732200978ED7 /* SectionHeaderFooterViewController.storyboard in Resources */,
 			);
@@ -230,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2085D8492A2EC34400978ED7 /* AdaptiveSectionViewController.swift in Sources */,
 				208466D92A16E505005B82A9 /* ListAppearanceViewController.swift in Sources */,
 				2085D81E2A28DF2500978ED7 /* GridViewController.swift in Sources */,
 				2085D8412A2EBE4C00978ED7 /* DistinctSectionViewController.swift in Sources */,
