@@ -14,7 +14,7 @@ final class ListCollectionViewController: UIViewController {
         let items: [Item]
     }
 
-    private struct Item: Hashable {
+    struct Item: Hashable {
         let title: String
         let category: String
     }
@@ -136,13 +136,9 @@ final class ListCollectionViewController: UIViewController {
 
     private func setupDataSource() {
         let cellRegistration = UICollectionView
-            .CellRegistration<UICollectionViewListCell, Item> { cell, indexPath, item in
-                var content = cell.defaultContentConfiguration()
-                content.text = "\(item)"
-                cell.contentConfiguration = content
-                cell.layer.borderWidth = 1
-                cell.layer.borderColor = UIColor.gray.cgColor
-        }
+            .CellRegistration<SampleCollectionCell, Item> { cell, indexPath, item in
+                cell.render(item: item)
+            }
         dataSource = UICollectionViewDiffableDataSource<ItemCollection, Item>(
             collectionView: collectionView
         ) { collectionView, indexPath, identifier in

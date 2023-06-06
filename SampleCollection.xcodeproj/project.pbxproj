@@ -28,6 +28,7 @@
 		2085D8322A2D796F00978ED7 /* TitleSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D8312A2D796F00978ED7 /* TitleSupplementaryView.swift */; };
 		2085D8372A2DACCF00978ED7 /* ListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D8362A2DACCF00978ED7 /* ListCollectionViewController.swift */; };
 		2085D8392A2DACDC00978ED7 /* ListCollectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2085D8382A2DACDC00978ED7 /* ListCollectionViewController.storyboard */; };
+		2085D83F2A2EB34500978ED7 /* SampleCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D83E2A2EB34500978ED7 /* SampleCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		2085D8312A2D796F00978ED7 /* TitleSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSupplementaryView.swift; sourceTree = "<group>"; };
 		2085D8362A2DACCF00978ED7 /* ListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewController.swift; sourceTree = "<group>"; };
 		2085D8382A2DACDC00978ED7 /* ListCollectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListCollectionViewController.storyboard; sourceTree = "<group>"; };
+		2085D83E2A2EB34500978ED7 /* SampleCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				2085D8312A2D796F00978ED7 /* TitleSupplementaryView.swift */,
+				2085D83E2A2EB34500978ED7 /* SampleCollectionCell.swift */,
 			);
 			path = ViewComponent;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				208466C92A16C8F1005B82A9 /* MainViewController.swift in Sources */,
 				208466C52A16C8F1005B82A9 /* AppDelegate.swift in Sources */,
 				2085D8302A2D78E100978ED7 /* PinnedSectionHeaderFooterViewController.swift in Sources */,
+				2085D83F2A2EB34500978ED7 /* SampleCollectionCell.swift in Sources */,
 				208466C72A16C8F1005B82A9 /* SceneDelegate.swift in Sources */,
 				2085D82A2A2D730900978ED7 /* SectionHeaderFooterViewController.swift in Sources */,
 				2085D8222A2D671100978ED7 /* InsetItemsGridViewController.swift in Sources */,
