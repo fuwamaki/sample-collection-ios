@@ -43,6 +43,8 @@
 		2085D85A2A2ED3C000978ED7 /* EmojiExplorerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D8592A2ED3C000978ED7 /* EmojiExplorerViewController.swift */; };
 		2085D85C2A2ED3C600978ED7 /* EmojiExplorerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2085D85B2A2ED3C600978ED7 /* EmojiExplorerViewController.storyboard */; };
 		2085D85E2A2EDA7500978ED7 /* EmojiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D85D2A2EDA7500978ED7 /* EmojiDetailViewController.swift */; };
+		DD3FA5FE2AD7C744006C8168 /* SimpleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FA5FD2AD7C744006C8168 /* SimpleListViewController.swift */; };
+		DD3FA6002AD7C758006C8168 /* SimpleListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3FA5FF2AD7C758006C8168 /* SimpleListViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +86,8 @@
 		2085D8592A2ED3C000978ED7 /* EmojiExplorerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiExplorerViewController.swift; sourceTree = "<group>"; };
 		2085D85B2A2ED3C600978ED7 /* EmojiExplorerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmojiExplorerViewController.storyboard; sourceTree = "<group>"; };
 		2085D85D2A2EDA7500978ED7 /* EmojiDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiDetailViewController.swift; sourceTree = "<group>"; };
+		DD3FA5FD2AD7C744006C8168 /* SimpleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleListViewController.swift; sourceTree = "<group>"; };
+		DD3FA5FF2AD7C758006C8168 /* SimpleListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SimpleListViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 				208466CF2A16C8F2005B82A9 /* LaunchScreen.storyboard */,
 				208466CA2A16C8F1005B82A9 /* MainViewController.storyboard */,
 				208466DA2A16E526005B82A9 /* ListAppearanceViewController.storyboard */,
+				DD3FA5FF2AD7C758006C8168 /* SimpleListViewController.storyboard */,
 				2085D81F2A28E05700978ED7 /* GridViewController.storyboard */,
 				2085D8232A2D671C00978ED7 /* InsetItemsGridViewController.storyboard */,
 				2085D8252A2D704400978ED7 /* TwoColumnGridViewController.storyboard */,
@@ -164,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				208466C82A16C8F1005B82A9 /* MainViewController.swift */,
+				DD3FA5FD2AD7C744006C8168 /* SimpleListViewController.swift */,
 				208466D82A16E505005B82A9 /* ListAppearanceViewController.swift */,
 				2085D81D2A28DF2500978ED7 /* GridViewController.swift */,
 				2085D8212A2D671000978ED7 /* InsetItemsGridViewController.swift */,
@@ -254,6 +260,7 @@
 				2085D8202A28E05700978ED7 /* GridViewController.storyboard in Resources */,
 				208466DB2A16E526005B82A9 /* ListAppearanceViewController.storyboard in Resources */,
 				2085D82E2A2D78D800978ED7 /* PinnedSectionHeaderFooterViewController.storyboard in Resources */,
+				DD3FA6002AD7C758006C8168 /* SimpleListViewController.storyboard in Resources */,
 				208466CE2A16C8F2005B82A9 /* Assets.xcassets in Resources */,
 				208466CC2A16C8F1005B82A9 /* MainViewController.storyboard in Resources */,
 				2085D8432A2EBE5700978ED7 /* DistinctSectionViewController.storyboard in Resources */,
@@ -276,6 +283,7 @@
 				2085D85E2A2EDA7500978ED7 /* EmojiDetailViewController.swift in Sources */,
 				2085D8492A2EC34400978ED7 /* AdaptiveSectionViewController.swift in Sources */,
 				208466D92A16E505005B82A9 /* ListAppearanceViewController.swift in Sources */,
+				DD3FA5FE2AD7C744006C8168 /* SimpleListViewController.swift in Sources */,
 				2085D81E2A28DF2500978ED7 /* GridViewController.swift in Sources */,
 				2085D8412A2EBE4C00978ED7 /* DistinctSectionViewController.swift in Sources */,
 				2085D8452A2EBF4200978ED7 /* ListCell.swift in Sources */,

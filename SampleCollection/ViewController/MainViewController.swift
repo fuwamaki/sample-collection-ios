@@ -14,6 +14,7 @@ class MainViewController: UIViewController {
     }
 
     private enum ListType: Int, CaseIterable {
+        case simpleList
         case listAppearance
         case grid
         case insetItemsGrid
@@ -29,6 +30,8 @@ class MainViewController: UIViewController {
 
         var text: String {
             switch self {
+            case .simpleList:
+                return "Simple List"
             case .listAppearance:
                 return "List Appearance"
             case .grid:
@@ -58,6 +61,9 @@ class MainViewController: UIViewController {
 
         func pushViewController(_ navigationController: UINavigationController?) {
             switch self {
+            case .simpleList:
+                let viewController = SimpleListViewController.instantiate()
+                navigationController?.pushViewController(viewController, animated: true)
             case .listAppearance:
                 let viewController = ListAppearanceViewController.instantiate()
                 navigationController?.pushViewController(viewController, animated: true)
